@@ -1,0 +1,30 @@
+.image-section {
+    background: linear-gradient(227.37deg, rgba(218, 165, 32, 0.4) 22.37%, rgba(105, 87, 41, 0.4) 66.14%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 531px;
+    top: 39px
+    ;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white; /* Text color for better visibility */
+    font-style: Lato;
+    font-size: 10;
+}
+
+.text-container p {
+    margin: 5px;
+    
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    align-self: flex-end;
+    height:580px;
+}

@@ -1,0 +1,15 @@
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #daa520;
+    
+
+}
+
+  .truck {
+    background: rgba(248, 222, 126, 1);
+    
+
+
+}
