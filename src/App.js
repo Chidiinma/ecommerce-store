@@ -16,10 +16,15 @@ import Pic8 from './components/Assets/Pictures/chiffon.png'
 
 function App() {
   const products = [
-    { img: Pic1, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'Classic White Tee', price: '7,000.00', oldPrice: '12,000.00', discount: '5,000   -2%' },
-    { img: Pic2, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'Crossbody Bag', price: '26,000.00', oldPrice: '31,000.00', discount: '4,000   -6%' },
-    { img: Pic3, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'Vintage T-shirt', price: '17,000.00', oldPrice: '32,000.00', discount: '15,000   -5%' },
-    { img: Pic8, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'Chiffon', price: '11,000.00', oldPrice: '17,000.00', discount: '9,000   -7%' },
+    { img: Pic1, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'Classic White Tee', price: '7,000.00', oldPrice: '12,000.00', discount: '5,000', percent: '-2%' },
+    { img: Pic2, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'Crossbody Bag', price: '26,000.00', oldPrice: '31,000.00', discount: '4,000', percent: '-6%' },
+    { img: Pic3, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'Sneakers', price: '17,000.00', oldPrice: '32,000.00', discount: '15,000', percent: '-5%' },
+    { img: Pic4, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'Vintage T-shirt', price: '7,000.00', oldPrice: '12,000.00', discount: '5,000', percent: '-2%' },
+    { img: Pic5, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'Ballet Flats', price: '7,000.00', oldPrice: '12,000.00', discount: '5,000', percent: '-2%' },
+    { img: Pic6, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'The Tote bag', price: '7,000.00', oldPrice: '12,000.00', discount: '5,000', percent: '-2%' },
+    { img: Pic7, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'Classic Baseball cap', price: '7,000.00', oldPrice: '12,000.00', discount: '5,000', percent: '-2%' },
+    { img: Pic8, writeup: 'A versatile and timeless piece made from 100% organic cotton. Perfect for layering or wearing on its own.', name: 'Chiffon', price: '11,000.00', oldPrice: '17,000.00', discount: '9,000', percent: '-7%' },
+    
   ];
 
   return (
@@ -28,7 +33,7 @@ function App() {
       <Header />
       <Image/>
       <main>
-        <h2>Our Latest Products</h2>
+        <div className='title'><h2>Our Latest Products</h2></div>
         <div className="product-list">
           {products.map((product, index) => (
             <Product key={index} {...product} />
